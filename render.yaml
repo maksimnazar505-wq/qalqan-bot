@@ -1,0 +1,10 @@
+services:
+  - type: worker
+    name: qalqan-bot
+    runtime: python
+    plan: free
+    buildCommand: pip install -r requirements.txt
+    startCommand: python bot.py
+    envVars:
+      - key: BOT_TOKEN
+        value: 8627867357:AAFbKUYcp2GQ-GSDbMcSaUOUMI_aiYsfGbg
